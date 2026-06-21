@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>רגע קוסמי | ריברסינג לנשים במודיעין – עדי זהר רשף</title>
+<meta name="description" content="ליווי אישי בריברסינג (נשימה מעגלית) לנשים, בקליניקה פרטית במודיעין. שיחת התאמה חינמית ליצירת קשר ובדיקת התאמה עם עדי זהר רשף.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF6EE;
+    --white:#FFFFFF;
+    --gold:#C2992F;
+    --gold-dark:#9C7A22;
+    --gold-light:#E9D8AC;
+    --brown:#4A3728;
+    --brown-deep:#2E2118;
+    --brown-soft:#7A5F49;
+    --shadow: 0 8px 30px rgba(74,55,40,0.08);
+    --radius: 18px;
+    --max-width: 1140px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Heebo', sans-serif;
+    background:var(--cream);
+    color:var(--brown);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  h1,h2,h3{
+    font-family:'Frank Ruhl Libre', serif;
+    color:var(--brown-deep);
+    line-height:1.35;
+    margin:0 0 .6em;
+  }
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 24px;
+  }
+  section{padding:72px 0;}
+  .section-tight{padding:56px 0;}
+
+  /* ---------- HEADER ---------- */
+  header.site-header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(251,246,238,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(194,153,47,0.18);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 24px;
+    max-width:var(--max-width);
+    margin:0 auto;
+  }
+  .logo-img{height:48px; width:auto;}
+  .header-cta{
+    display:none;
+  }
+  @media(min-width:760px){
+    .header-cta{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--gold);
+      color:var(--white);
+      padding:10px 22px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:.95rem;
+      text-decoration:none;
+      transition:background .2s;
+    }
+    .header-cta:hover{background:var(--gold-dark);}
+  }
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:16px 32px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:1.05rem;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s, box-shadow .15s, background .2s;
+  }
+  .btn-primary{
+    background:var(--gold);
+    color:var(--white);
+    box-shadow:0 10px 24px rgba(194,153,47,0.35);
+  }
+  .btn-primary:hover{background:var(--gold-dark); transform:translateY(-2px);}
+  .btn-secondary{
+    background:transparent;
+    color:var(--brown);
+    border:1.5px solid var(--brown-soft);
+  }
+  .btn-secondary:hover{background:rgba(74,55,40,0.06);}
+  .btn-whatsapp{
+    background:#3DA854;
+    color:var(--white);
+  }
+  .btn-whatsapp:hover{background:#319143;}
+  .btn-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:28px;
+  }
+  .icon{width:20px; height:20px; flex-shrink:0;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:56px 0 64px;
+  }
+  .hero-inner{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:center;
+  }
+  @media(min-width:860px){
+    .hero-inner{
+      grid-template-columns:1.1fr .9fr;
+    }
+  }
+  .hero-img-wrap{
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    aspect-ratio:4/5;
+  }
+  .hero-img-wrap img{width:100%; height:100%; object-fit:cover;}
+  .hero h1{
+    font-size:2.1rem;
+  }
+  @media(min-width:760px){
+    .hero h1{font-size:2.7rem;}
+  }
+  .hero .subtitle{
+    font-size:1.15rem;
+    color:var(--brown-soft);
+    max-width:560px;
+  }
+  .trust-line{
+    margin-top:18px;
+    font-size:.95rem;
+    color:var(--gold-dark);
+    font-weight:600;
+  }
+
+  /* ---------- GENERIC SECTION LAYOUTS ---------- */
+  .section-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:36px;
+    align-items:center;
+  }
+  @media(min-width:860px){
+    .section-grid{grid-template-columns:1fr 1fr;}
+    .section-grid.reverse .section-img{order:2;}
+  }
+  .section-img{
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .section-img img{width:100%; height:100%; object-fit:cover;}
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:.8rem;
+    color:var(--gold-dark);
+    font-weight:700;
+    margin-bottom:10px;
+    display:block;
+  }
+  .lead-text{
+    font-size:1.15rem;
+    color:var(--brown);
+  }
+  .lead-text strong{color:var(--brown-deep);}
+
+  /* ---------- NOT ALONE (clean, no photo) ---------- */
+  .not-alone{
+    background:var(--white);
+    position:relative;
+    overflow:hidden;
+  }
+  .not-alone .decor{
+    position:absolute;
+    inset:0;
+    background:url('images/decorative.jpeg') center/cover no-repeat;
+    opacity:.06;
+    pointer-events:none;
+  }
+  .not-alone-content{
+    position:relative;
+    max-width:680px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .closing-line{
+    margin-top:24px;
+    font-size:1.25rem;
+    font-weight:700;
+    color:var(--gold-dark);
+    font-family:'Frank Ruhl Libre', serif;
+  }
+
+  /* ---------- HOW SESSION LOOKS ---------- */
+  .steps{
+    display:grid;
+    gap:20px;
+    margin-top:8px;
+  }
+  @media(min-width:760px){
+    .steps{grid-template-columns:repeat(3,1fr);}
+  }
+  .step-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:26px 22px;
+    box-shadow:var(--shadow);
+  }
+  .step-num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:34px; height:34px;
+    border-radius:50%;
+    background:var(--gold-light);
+    color:var(--gold-dark);
+    font-weight:700;
+    margin-bottom:14px;
+  }
+  .meta-note{
+    margin-top:26px;
+    font-size:.98rem;
+    color:var(--brown-soft);
+    background:var(--gold-light);
+    padding:16px 20px;
+    border-radius:14px;
+  }
+
+  /* ---------- FIT / NOT FIT CARDS ---------- */
+  .fit-grid{
+    display:grid;
+    gap:24px;
+    margin-top:10px;
+  }
+  @media(min-width:760px){
+    .fit-grid{grid-template-columns:1fr 1fr;}
+  }
+  .fit-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:30px 26px;
+    box-shadow:var(--shadow);
+    border-top:4px solid var(--gold);
+  }
+  .fit-card.warn{border-top-color:var(--brown-soft);}
+  .fit-card h3{font-size:1.2rem;}
+  .fit-card ul{
+    padding-right:20px;
+    margin:0;
+  }
+  .fit-card li{margin-bottom:10px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{
+    display:grid;
+    gap:22px;
+    margin-top:10px;
+  }
+  @media(min-width:700px){
+    .testi-grid{grid-template-columns:1fr 1fr;}
+  }
+  .testi-card{
+    background:#E9F6E3;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .testi-card h3{
+    font-size:1.05rem;
+    font-family:'Heebo',sans-serif;
+    color:var(--brown-deep);
+    margin-bottom:10px;
+  }
+  .testi-card p{
+    font-size:.97rem;
+    color:var(--brown);
+  }
+  .testi-sign{
+    font-weight:700;
+    color:var(--gold-dark);
+    margin-top:8px;
+    display:block;
+  }
+  .testi-disclaimer{
+    text-align:center;
+    margin-top:24px;
+    font-size:.9rem;
+    color:var(--brown-soft);
+    font-style:italic;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list details{
+    background:var(--white);
+    border-radius:14px;
+    margin-bottom:12px;
+    padding:18px 22px;
+    box-shadow:var(--shadow);
+  }
+  .faq-list summary{
+    cursor:pointer;
+    font-weight:600;
+    font-size:1.02rem;
+    color:var(--brown-deep);
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{
+    content:'+';
+    font-size:1.4rem;
+    color:var(--gold-dark);
+    flex-shrink:0;
+    transition:transform .2s;
+  }
+  .faq-list details[open] summary::after{
+    transform:rotate(45deg);
+  }
+  .faq-list .faq-answer{
+    margin-top:14px;
+    color:var(--brown-soft);
+    font-size:.97rem;
+  }
+
+  /* ---------- FORM ---------- */
+  .form-section .section-grid{align-items:flex-start;}
+  form.lead-form{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:30px;
+    box-shadow:var(--shadow);
+  }
+  .form-row{margin-bottom:18px;}
+  .form-row label{
+    display:block;
+    font-weight:600;
+    margin-bottom:6px;
+    font-size:.95rem;
+    color:var(--brown-deep);
+  }
+  .form-row input,
+  .form-row select,
+  .form-row textarea{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+    border:1.5px solid var(--gold-light);
+    background:var(--cream);
+    font-family:inherit;
+    font-size:1rem;
+    color:var(--brown);
+  }
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus{
+    outline:none;
+    border-color:var(--gold);
+  }
+  .radio-group{
+    display:flex;
+    gap:18px;
+  }
+  .radio-group label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:400;
+  }
+  .form-note{
+    font-size:.85rem;
+    color:var(--brown-soft);
+    margin-top:-4px;
+    margin-bottom:18px;
+  }
+  .thank-you{
+    display:none;
+    text-align:center;
+    padding:30px 10px;
+  }
+  .thank-you h3{color:var(--gold-dark);}
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{
+    text-align:center;
+    background:linear-gradient(180deg, var(--white), var(--gold-light) 220%);
+  }
+  .final-cta-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 24px;
+    box-shadow:var(--shadow);
+  }
+  .final-cta-img img{width:100%; height:100%; object-fit:cover;}
+  .final-cta p{
+    max-width:560px;
+    margin:0 auto 28px;
+    font-size:1.1rem;
+  }
+  .social-row{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:28px;
+  }
+  .social-row a{
+    width:42px;height:42px;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:50%;
+    background:var(--white);
+    box-shadow:var(--shadow);
+    color:var(--brown-deep);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--brown-deep);
+    color:var(--gold-light);
+    padding:56px 0 100px;
+  }
+  footer .logo-img{height:56px; filter:brightness(1.1);}
+  .footer-top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:14px;
+  }
+  .footer-contacts{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:22px;
+    margin:18px 0;
+    font-size:.97rem;
+  }
+  .footer-contacts a{
+    color:var(--gold-light);
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .footer-socials{
+    display:flex;
+    gap:16px;
+    margin-top:6px;
+  }
+  .footer-socials a{
+    width:38px;height:38px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold-light);
+  }
+  .footer-disclaimer{
+    max-width:760px;
+    margin:36px auto 0;
+    font-size:.82rem;
+    line-height:1.8;
+    color:rgba(232,217,172,0.75);
+    text-align:center;
+    border-top:1px solid rgba(232,217,172,0.18);
+    padding-top:24px;
+  }
+  .footer-disclaimer strong{color:var(--gold-light);}
+
+  /* ---------- STICKY MOBILE CTA ---------- */
+  .sticky-cta{
+    display:none;
+    position:fixed;
+    bottom:0; left:0; right:0;
+    z-index:60;
+    background:var(--white);
+    box-shadow:0 -6px 20px rgba(0,0,0,0.12);
+    padding:10px 16px;
+    padding-bottom:calc(10px + env(safe-area-inset-bottom));
+  }
+  .sticky-cta a{
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+  @media(max-width:759px){
+    .sticky-cta{display:block;}
+    body{padding-bottom:74px;}
+  }
+
+  .center-text{text-align:center;}
+  .max-w-680{max-width:680px; margin-left:auto; margin-right:auto;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" aria-label="רגע קוסמי - לראש העמוד">
+      <img class="logo-img" src="images/main-logo.jpeg" alt="רגע קוסמי - לוגו">
+    </a>
+    <a class="header-cta" href="#contact-form">לשיחת התאמה חינמית</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero" id="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <h1>מרגישה שמשהו צריך להשתנות, אבל לא יודעת מאיפה להתחיל?</h1>
+      <p class="subtitle">ליווי אישי לנשים בתהליך של ריברסינג (נשימה מעגלית) — לשחרור רגשי, התחברות מחודשת לעצמך ובהירות פנימית.<br>
+      בקליניקה פרטית במודיעין, בקצב שלך, במרחב בטוח ולא שיפוטי.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#contact-form">לשיחת התאמה חינמית</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/972525480202" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.8-.4-1.6-.9-2.3-1.6-.6-.6-1.2-1.4-1.6-2.1-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.1-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.1 0 1.9 1.5 3.7 1.7 4 .2.3 2 3.1 4.9 4.2 2.9 1.1 2.9.7 3.4.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 1 1-2.9-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+          דברי איתי בוואטסאפ
+        </a>
+      </div>
+      <p class="trust-line">שיחת ההתאמה היא ללא עלות וללא התחייבות.</p>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="images/picture-7.jpeg" alt="עדי זהר רשף מחייכת בחמימות">
+    </div>
+  </div>
+</section>
+
+<!-- 2. את לא לבד -->
+<section class="not-alone" id="not-alone">
+  <div class="decor"></div>
+  <div class="wrap not-alone-content">
+    <p class="lead-text">את מתפקדת, מסתדרת, נראית בסדר מבחוץ.<br>
+    אבל בפנים יש תחושה שמלווה אותך כל הזמן —<br>
+    פער בין איך שאת רוצה להרגיש ולחיות, לבין מה שקורה בפועל.</p>
+
+    <p class="lead-text">אולי זה מתבטא בתקיעות באיזה תחום בחיים, בדפוסים שחוזרים על עצמם,
+    בקושי להציב גבול או לקבל החלטה.<br>
+    אולי זו תחושה כללית של עומס, מתח, ולפעמים גם ביקורת עצמית שלא נותנת מנוח.</p>
+
+    <p class="lead-text">את יודעת שמשהו צריך להשתנות.<br>
+    את רק לא בטוחה איך, ומאיפה להתחיל.</p>
+
+    <p class="closing-line">את לא צריכה לדעת את זה כבר עכשיו. בשביל זה אני כאן.</p>
+  </div>
+</section>
+
+<!-- 3. מי זאת עדי -->
+<section id="about">
+  <div class="wrap section-grid">
+    <div class="section-img">
+      <img src="images/picture-6.jpeg" alt="עדי זהר רשף, פורטרט חם">
+    </div>
+    <div>
+      <span class="eyebrow">מי זאת עדי</span>
+      <h2>סיפור אישי, ולא רק מקצועי</h2>
+      <p>שמי עדי זהר רשף, ואני מלווה רגשית ואנרגטית לנשים בתהליכי שחרור רגשי, ריפוי והעצמה — בעזרת שיטת הריברסינג (נשימה מעגלית), בשילוב רייקי וכלים נוספים שרכשתי במהלך השנים.</p>
+      <p>אני עוסקת בתחום משנת 2023, מוסמכת על ידי "בית להיוולד מחדש" — המרכז הישראלי לנשימה מודעת, עם הכשרה כמטפלת ומנחה בריברסינג, הכשרת מאסטר, והתמחות נוספת בתחום.</p>
+      <p>הגעתי לריברסינג מתוך מסע אישי משלי. עברתי תהליכי טיפול רבים בחיים, ותמיד הרגשתי שמשהו נשאר על פני השטח — שיפור לזמן מה, ואז חזרה לאותם דפוסים. כשנחשפתי לריברסינג, גיליתי כלי שעבד אצלי אחרת — דרך הגוף ולא רק דרך השכל. זו החוויה שמלווה אותי גם היום, ושמתוכה אני מלווה את הנשים שמגיעות אליי.</p>
+      <p>אני מאמינה שכל אישה שמגיעה אליי יכולה להיות פה בדיוק כמו שהיא — באמת, באותנטיות, בלי מסכות ובלי שיפוטיות. המרחב הזה הוא שלך בלבד.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. מה זה ריברסינג -->
+<section id="what-is" style="background:var(--white);">
+  <div class="wrap section-grid reverse">
+    <div class="section-img">
+      <img src="images/picture-4.jpeg" alt="כלי טקס - קערה טיבטית וקריסטל">
+    </div>
+    <div>
+      <span class="eyebrow">מה זה ריברסינג, בפשטות</span>
+      <h2>ובמה הוא שונה</h2>
+      <p><strong>ריברסינג (rebirthing) הוא שיטת נשימה מעגלית — נשימה רציפה, ללא הפסקה בין השאיפה לנשיפה.</strong><br>
+      הנשימה הרציפה מאפשרת לגוף להיכנס למצב עמוק יותר של הרפיה, שבו עולה לעיבוד מה שמבקש להשתחרר: מתח שנאגר, רגשות מודחקים, דפוסים שחוזרים על עצמם.</p>
+      <p><strong>למה זה שונה מטיפול שיחתי?</strong><br>
+      בשיחה, השכל שלנו פעמים רבות "שומר" עלינו ומתנגד לשינוי — לפעמים במודע, לפעמים לא. הריברסינג עובד אחרת: הוא מגיע ישירות דרך הגוף והנשימה, ומאפשר לעבד תכנים שלא תמיד נגישים רק דרך מילים.</p>
+      <p>זה לא טיפול נפשי וזה לא תחליף לטיפול רפואי או פסיכולוגי כשיש בו צורך — זה כלי משלים, עוצמתי בפני עצמו, לעבודה רגשית, אנרגטית וגופנית.</p>
+      <a class="btn btn-primary" href="#contact-form">רוצה להבין אם זה מתאים לך? לשיחת התאמה חינמית</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. איך נראה מפגש -->
+<section id="session">
+  <div class="wrap">
+    <div class="center-text max-w-680" style="margin-bottom:30px;">
+      <span class="eyebrow">איך נראה מפגש</span>
+      <h2>שלושה חלקים, שקיפות מלאה</h2>
+    </div>
+    <div class="section-grid">
+      <div class="section-img">
+        <img src="images/picture-1.jpeg" alt="מרחב המפגש - נר, קערה טיבטית ויומן">
+      </div>
+      <div>
+        <div class="steps" style="grid-template-columns:1fr;">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h3>שיח ממוקד</h3>
+            <p>מתחילות בשיחה קצרה על מה שמעניין אותך לעבוד עליו היום. זה עוזר לדייק את הכיוון של המפגש.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h3>נשימה מעגלית (ריברסינג)</h3>
+            <p>שוכבות בנוחות על מזרן, בעיניים עצומות, בליווי מוזיקה. במהלך הנשימה עולים רגשות, תחושות גופניות ותכנים שמבקשים שחרור. אני נמצאת איתך לאורך כל הדרך, בקצב שלך.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h3>שיתוף וסיכום</h3>
+            <p>בסוף הסשן יש מקום לשיתוף קצר, על מה שעלה ועל איך את מרגישה.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="meta-note"><strong>משך מפגש:</strong> מפגש היכרות נמשך כשעתיים (כולל הסבר מעמיק והיכרות), ומפגשים רגילים נמשכים כשעה וחצי. משך זמן הנשימה בפועל הוא כ-40 דקות בממוצע, בהתאם לתהליך האישי.<br><br>
+    כל מה שעולה במפגש — או לא עולה — הוא חלק טבעי ולגיטימי מהתהליך.</p>
+    <div class="center-text" style="margin-top:30px;">
+      <a class="btn btn-secondary" href="#contact-form">לשיחת התאמה חינמית</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. למי זה מתאים -->
+<section id="fit" style="background:var(--white);">
+  <div class="wrap">
+    <div class="center-text max-w-680" style="margin-bottom:10px;">
+      <span class="eyebrow">למי זה מתאים — ולמי פחות</span>
+      <h2>בניית אמון דרך כנות</h2>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card">
+        <h3>התהליך מתאים לך אם:</h3>
+        <ul>
+          <li>את מרגישה עומס רגשי, תקיעות, או פער בין הרצוי למצוי בחייך.</li>
+          <li>יש דפוסים חוזרים, חסמים או חוסר ביטחון שאת רוצה לעבוד עליהם.</li>
+          <li>את מחפשת תהליך, ולא פתרון חד-פעמי — ופתוחה להתמיד בו.</li>
+          <li>אין לך שום ניסיון קודם בנשימה, טיפול או מדיטציה — וזה בסדר גמור. רוב הנשים שמגיעות אליי מתחילות בלי שום רקע קודם.</li>
+        </ul>
+      </div>
+      <div class="fit-card warn">
+        <h3>חשוב לציין —</h3>
+        <p>התהליך לא בא להחליף טיפול רפואי, פסיכולוגי או פסיכיאטרי כשיש בהם צורך. נשים המתמודדות עם משבר נפשי חריף, פוסט-טראומה מורכבת, או מצב רפואי משמעותי, מוזמנות לעדכן על כך מראש בשיחת ההתאמה — כדי שנוכל לבדוק יחד מה הדרך הבטוחה והנכונה ביותר עבורך.</p>
+      </div>
+    </div>
+    <div class="center-text" style="margin-top:30px;">
+      <a class="btn btn-primary" href="#contact-form">לא בטוחה אם זה מתאים לך? זה בדיוק מה שנבדוק בשיחת ההתאמה החינמית</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. מרחב בטוח -->
+<section id="safe-space">
+  <div class="wrap section-grid reverse">
+    <div class="section-img">
+      <img src="images/picture-3.jpeg" alt="ידיים בתנוחת הקשבה, רגועה">
+    </div>
+    <div>
+      <span class="eyebrow">מרחב בטוח</span>
+      <h2>בלי מסכות, ובלי לחץ</h2>
+      <p>כל מפגש מתקיים במרחב פרטי, דיסקרטי ולא שיפוטי — לא מצדי, ולא מצדך.</p>
+      <p>לפני כל שלב בתהליך, תמיד יהיה הסבר ברור ומקום לשאלות — כולל בקשת רשות מפורשת לכל מה שקשור למגע, גבולות או צילום.</p>
+      <p>אני נמצאת איתך באמת — בהקשבה ובהתאמה לקצב האישי שלך, בשיח ובנשימה. הריברסינג בטוח, ולא לוקח אותך למקום שאת לא בשלה אליו. אם משהו עולה — זה אומר שאת מוכנה לפגוש אותו, גם אם זה לא מרגיש כך בהתחלה.</p>
+      <p class="closing-line">את יכולה להגיע בדיוק כמו שאת. בלי מסכות, ובלי לחץ להיות במקום אחר.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. המלצות -->
+<section id="testimonials" style="background:var(--white);">
+  <div class="wrap">
+    <div class="center-text max-w-680" style="margin-bottom:10px;">
+      <span class="eyebrow">המלצות</span>
+      <h2>בקול שלהן</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <h3>"מי שגם סקפטי כמוני — אני ממש ממליצה לתת לזה הזדמנות"</h3>
+        <p>"...היה לי מאוד קשה להאמין שנשימה יכולה להיות כל כך עוצמתית, אבל החלטתי לנסות. מהרגע שהתחלנו לדבר, הרגשתי שמתחברת לעדי בקלות ומשתפת אותה ברגשות שלי. אחרי כל טיפול הרגשתי שהגוף שלי מצליח לשחרר עוד ועוד. אחרי 5 טיפולים אני כבר מרגישה שינויים מטורפים בחיים שלי, רגועה יותר ואופטימית יותר. כל כך שמחה שעשיתי את התהליך הזה עם עדי, היא מדהימה!!"</p>
+        <span class="testi-sign">— מאיה</span>
+      </div>
+      <div class="testi-card">
+        <h3>"פחדתי מהטיפול היום, והדמעות לא היו דמעות של עצב"</h3>
+        <p>"מאוד פחדתי מהטיפול היום, כי בעבר חוויתי תחושות לא פשוטות שנמשכו כמה ימים. אבל הפעם משהו כאילו השתחרר. הדמעות שלי אחרי הטיפול לא היו דמעות של עצב, אלא של אופטימיות וחוזק — תחושה שהכל יהיה בסדר ושאני בדרך הנכונה. התחושה הטובה נשארה איתי, והייתי גדולה מהחיים ומאוד גאה בעצמי. תודה תודה עלייך, איזה מזל שפגשתי אותך."</p>
+        <span class="testi-sign">— לקוחה, מתוך הודעת תודה לאחר מפגש</span>
+      </div>
+      <div class="testi-card">
+        <h3>"לא העזתי לשים את התמונה שלי בפרופיל — ופתאום מתחברת לעצמי"</h3>
+        <p>"מצאתי אותך באינסטגרם ולקח לי זמן עד שלקחתי את הצעד. בשבועות האחרונים העליתי כל מה שפחדתי פעם להעלות. אחרי הסשן האחרון נפלה לי הבנה שמתחברת לי לחג — את ברכה לעולם ומתנה בשבילי. אוהבת אותך."</p>
+        <span class="testi-sign">— לקוחה, מתוך הודעת וואטסאפ</span>
+      </div>
+      <div class="testi-card">
+        <h3>"כל כך נהנתי איתך, ואני שמחה שעשיתי את התהליך הזה"</h3>
+        <p>"עדי, תודה רבה רבה על הכל. כל כך נהנתי איתך ואני כל כך שמחה שעשיתי את התהליך הזה איתך!! אוהבת, שבת שלום 🙏"</p>
+        <span class="testi-sign">— לקוחה, מתוך הודעת וואטסאפ</span>
+      </div>
+    </div>
+    <p class="testi-disclaimer">כל חוויה היא אישית ושונה מאישה לאישה.</p>
+    <div class="center-text" style="margin-top:30px;">
+      <a class="btn btn-primary" href="#contact-form">רוצה לחוות בעצמך? לשיחת התאמה חינמית</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. שאלות נפוצות -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center-text max-w-680" style="margin-bottom:30px;">
+      <span class="eyebrow">שאלות נפוצות</span>
+      <h2>בגובה העיניים, ללא ז'רגון</h2>
+    </div>
+    <div class="faq-list max-w-680">
+
+      <details>
+        <summary>מה זה בעצם ריברסינג?</summary>
+        <p class="faq-answer">שיטת נשימה מעגלית — נשימה רציפה, ללא הפסקות בין שאיפה לנשיפה — שמכניסה לגוף יותר חמצן ואנרגיה, ועוזרת לשחרר מתחים פיזיים ורגשיים בצורה טבעית.</p>
+      </details>
+
+      <details>
+        <summary>צריך ניסיון קודם?</summary>
+        <p class="faq-answer">לא. כל תהליך מותאם אישית לקצב שלך. בתחילת הדרך מומלץ לעבור כמה מפגשים (8–10) בליווי מטפל מוסמך, כדי לבסס היכרות בטוחה עם הנשימה.</p>
+      </details>
+
+      <details>
+        <summary>זה מתאים לכל אחת?</summary>
+        <p class="faq-answer">ריברסינג מתאים לנשים רבות שמחפשות שחרור רגשי עמוק. עם זאת, לא כל אחת נמצאת בשלב המתאים לתהליך הזה כרגע — וההתאמה האישית נעשית בשיחה לפני תחילת הדרך.</p>
+      </details>
+
+      <details>
+        <summary>כמה זמן נמשך מפגש?</summary>
+        <p class="faq-answer">מפגש היכרות — כשעתיים. מפגש רגיל — כשעה וחצי. זמן הנשימה עצמו הוא כ-40 דקות בממוצע.</p>
+      </details>
+
+      <details>
+        <summary>כמה מפגשים בדרך כלל צריך?</summary>
+        <p class="faq-answer">זה משתנה מאישה לאישה, בהתאם למצב הרגשי, הגיל וחוויות העבר. כדי לעבור תהליך עומק משמעותי, מומלץ להתחיל ב-12 מפגשים שבועיים רצופים, ולאחר מכן אפשר לרווח את התדירות.</p>
+      </details>
+
+      <details>
+        <summary>מה מרגישים בזמן המפגש?</summary>
+        <p class="faq-answer">זה משתנה מאדם לאדם ואף ממפגש למפגש. לרוב חווים רגיעה עמוקה, חיבור לנשימה ולגוף, ועלייה של רגשות או תחושות שמבקשות שחרור. ויש גם מפגשים שבהם לא מרגישים הרבה — וזה בסדר גמור.</p>
+      </details>
+
+      <details>
+        <summary>זה יכול להיות רגשי?</summary>
+        <p class="faq-answer">כן. הריברסינג עובד דרך הגוף, הנשימה והרגש — לכן לעיתים עולים רגשות, זיכרונות או תובנות שלא היה להם מקום ביומיום. כל מה שעולה הוא טבעי ולגיטימי, וכל אחת חווה את זה בקצב ובדרך שלה.</p>
+      </details>
+
+      <details>
+        <summary>יש הכנה לפני המפגש?</summary>
+        <p class="faq-answer">כן. במפגש ההיכרות תקבלי הסבר מעמיק על השיטה, הנחיה לביצוע הנשימה, ופירוט של תחושות שעשויות לעלות.</p>
+      </details>
+
+      <details>
+        <summary>יש מצבים שבהם לא מומלץ להגיע?</summary>
+        <p class="faq-answer">כן. אם יש התמודדות רפואית או נפשית משמעותית, חשוב לעדכן על כך מראש. בשיחת ההתאמה נעשה בירור קצר כדי לוודא שהתהליך מתאים ובטוח עבורך.</p>
+      </details>
+
+      <details>
+        <summary>זה מחליף טיפול רפואי או רגשי?</summary>
+        <p class="faq-answer">לא. ריברסינג אינו מהווה תחליף לטיפול רפואי, פסיכולוגי או פסיכיאטרי כשיש בהם צורך. הוא כלי משלים ועוצמתי בפני עצמו — לעבודה דרך הגוף, הנשימה והרגש.</p>
+      </details>
+
+      <details>
+        <summary>המפגשים מתקיימים רק במודיעין?</summary>
+        <p class="faq-answer">המפגשים מתקיימים בקליניקה הפרטית שלי במודיעין. לא מעט נשים מגיעות גם ממרחקים גדולים יותר, כשהתהליך מרגיש להן נכון — אז המיקום לא צריך לעצור אותך אם זה מתאים לך.</p>
+      </details>
+
+      <details>
+        <summary>איך קובעים תור?</summary>
+        <p class="faq-answer">משאירים פרטים או שולחים הודעת וואטסאפ, ואני חוזרת אישית לתיאום שיחת התאמה חינמית. בסיומה, אם זה מתאים — נתאם מפגש היכרות.</p>
+      </details>
+
+    </div>
+    <div class="center-text" style="margin-top:30px;">
+      <a class="btn btn-whatsapp" href="https://wa.me/972525480202" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.8-.4-1.6-.9-2.3-1.6-.6-.6-1.2-1.4-1.6-2.1-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.1-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.1 0 1.9 1.5 3.7 1.7 4 .2.3 2 3.1 4.9 4.2 2.9 1.1 2.9.7 3.4.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 1 1-2.9-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        יש לך שאלה שלא קיבלה מענה? שלחי לי וואטסאפ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. שיחת התאמה - טופס -->
+<section id="contact-form" style="background:var(--white);" class="form-section">
+  <div class="wrap">
+    <div class="center-text max-w-680" style="margin-bottom:10px;">
+      <span class="eyebrow">שיחת התאמה — איך מתחילים</span>
+      <h2>השלב הראשון הוא שיחת התאמה חינמית, ללא התחייבות.</h2>
+      <p class="lead-text">בשיחה (כ-30 דקות) נדבר על מה שמביא אותך לתהליך, אענה על השאלות והחששות שלך, ונבדוק יחד אם זה הזמן והמקום הנכונים בשבילך.</p>
+    </div>
+
+    <div class="section-grid" style="margin-top:20px;">
+      <div class="section-img">
+        <img src="images/picture-2.jpeg" alt="מרגע של שלווה והקשבה עצמית">
+      </div>
+
+      <div>
+        <div style="background:var(--gold-light); border-radius:14px; padding:22px; margin-bottom:24px;">
+          <strong>איך זה עובד בפועל:</strong>
+          <ol style="padding-right:20px; margin:10px 0 0;">
+            <li>משאירים פרטים בטופס קצר, או שולחים הודעת וואטסאפ.</li>
+            <li>אני חוזרת אישית לתיאום שיחת ההתאמה החינמית, בטלפון.</li>
+            <li>אם מרגישים שזה מתאים — מתאמות מפגש היכרות (כשעתיים, בתשלום), ומשם מתחילים את התהליך.</li>
+          </ol>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <div class="form-row">
+            <label for="fullName">שם מלא</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-row">
+            <label for="age">גיל</label>
+            <input type="number" id="age" name="age" min="1" required>
+          </div>
+          <div class="form-row">
+            <label for="city">עיר מגורים</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="form-row">
+            <label for="reason">מה מביא אותך להתעניין בתהליך?</label>
+            <textarea id="reason" name="reason" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <label>ניסיון קודם בריברסינג / טיפול רגשי</label>
+            <div class="radio-group">
+              <label><input type="radio" name="experience" value="כן" checked> כן</label>
+              <label><input type="radio" name="experience" value="לא"> לא</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="notes">האם יש משהו שחשוב שאדע מראש (מצב רגשי, בריאותי, תרופות, טיפול נוסף)?</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="phone">טלפון ליצירת קשר</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">לשיחת התאמה חינמית</button>
+        </form>
+
+        <div class="thank-you" id="thankYou">
+          <h3>תודה שפנית אליי 🤍</h3>
+          <p>קיבלתי את הפרטים שלך, ואחזור אלייך בהקדם לתיאום שיחת ההתאמה. בינתיים נפתח עבורך חלון וואטסאפ עם ההודעה — אם הוא לא נפתח, אפשר ללחוץ על הכפתור למטה.</p>
+          <a class="btn btn-whatsapp" id="thankYouWhatsapp" href="https://wa.me/972525480202" target="_blank" rel="noopener">פתיחת וואטסאפ</a>
+        </div>
+
+        <p class="form-note" style="margin-top:16px;">או פשוט: <a href="https://wa.me/972525480202" target="_blank" rel="noopener" style="color:var(--gold-dark); font-weight:600;">שלחי לי הודעת וואטסאפ</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. CTA סופי -->
+<section class="final-cta" id="final-cta">
+  <div class="wrap">
+    <div class="final-cta-img">
+      <img src="images/picture-7.jpeg" alt="עדי זהר רשף מחייכת בחמימות">
+    </div>
+    <h2>את לא צריכה לדעת בדיוק מה הדרך — את רק צריכה להתחיל.</h2>
+    <p>שיחת ההתאמה היא צעד קטן, חינמי וללא התחייבות. ואני כאן, לאורך כל הדרך.</p>
+    <a class="btn btn-primary" href="#contact-form">לשיחת התאמה חינמית</a>
+
+    <div class="social-row">
+      <a href="https://wa.me/972525480202" target="_blank" rel="noopener" aria-label="וואטסאפ">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.8-.4-1.6-.9-2.3-1.6-.6-.6-1.2-1.4-1.6-2.1-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.1-.2.2-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.1 0 1.9 1.5 3.7 1.7 4 .2.3 2 3.1 4.9 4.2 2.9 1.1 2.9.7 3.4.7.5 0 1.6-.6 1.8-1.2.2-.6.2-1.1.2-1.2 0-.1-.1-.2-.3-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 1 1-2.9-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/adi_zohar_reshef2" target="_blank" rel="noopener" aria-label="אינסטגרם">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.facebook.com/share/1D377vjcEA/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="פייסבוק">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.79c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 12. פוטר -->
+<footer>
+  <div class="wrap footer-top">
+    <a href="#hero"><img class="logo-img" src="images/main-logo.jpeg" alt="רגע קוסמי"></a>
+    <div>
+      <strong style="font-size:1.1rem; color:var(--gold-light);">רגע קוסמי | עדי זהר רשף</strong>
+      <p style="margin-top:6px; color:rgba(232,217,172,0.85);">ליווי אישי בריברסינג לנשים | קליניקה פרטית במודיעין</p>
+    </div>
+
+    <div class="footer-contacts">
+      <a href="https://wa.me/972525480202" target="_blank" rel="noopener">וואטסאפ: 052-548-0202</a>
+      <a href="tel:+972525480202">טלפון: 052-548-0202</a>
+      <a href="mailto:adizohareshef2@gmail.com">adizohareshef2@gmail.com</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/adi_zohar_reshef2" target="_blank" rel="noopener" aria-label="אינסטגרם">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.facebook.com/share/1D377vjcEA/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="פייסבוק">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.79c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-disclaimer">
+      <strong>לתשומת לבך:</strong><br>
+      ריברסינג ונשימה מעגלית הם כלים לעבודה רגשית, אנרגטית וגופנית, ואינם מהווים תחליף לטיפול רפואי, פסיכולוגי או פסיכיאטרי. אם את מטופלת רפואית או נפשית, נוטלת תרופות באופן קבוע, או נמצאת בתהליך טיפולי נוסף, מומלץ לעדכן על כך מראש כדי שנוכל להתאים יחד את התהליך בצורה הבטוחה והנכונה ביותר עבורך. עדי אינה מטפלת רפואית, פסיכולוגית או פסיכיאטרית, והליווי שהיא מציעה הוא משלים — ולא מחליף — טיפול מקצועי כשהוא נדרש.
+    </p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="#contact-form">לשיחת התאמה חינמית</a>
+</div>
+
+<script>
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = e.target;
+    const fullName = f.fullName.value.trim();
+    const age = f.age.value.trim();
+    const city = f.city.value.trim();
+    const reason = f.reason.value.trim();
+    const experience = f.experience.value;
+    const notes = f.notes.value.trim();
+    const phone = f.phone.value.trim();
+
+    const lines = [
+      'שיחת התאמה - רגע קוסמי',
+      'שם מלא: ' + fullName,
+      'גיל: ' + age,
+      'עיר מגורים: ' + city,
+      'מה מביא אותך להתעניין בתהליך: ' + (reason || '-'),
+      'ניסיון קודם בריברסינג/טיפול רגשי: ' + experience,
+      'חשוב לדעת מראש: ' + (notes || '-'),
+      'טלפון ליצירת קשר: ' + phone
+    ];
+    const message = encodeURIComponent(lines.join('\n'));
+    const waUrl = 'https://wa.me/972525480202?text=' + message;
+
+    document.getElementById('thankYouWhatsapp').href = waUrl;
+    f.style.display = 'none';
+    document.getElementById('thankYou').style.display = 'block';
+
+    window.open(waUrl, '_blank');
+  });
+</script>
+
+</body>
+</html>
